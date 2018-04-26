@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Coding Round" parallel="tests">
+	<test name="Coding Round1" preserve-order="true">
+		<classes>
+			<class name="testcoding.FlightBookingTest">
+				<methods>
+					<include name="testThatResultsAppearForAOneWayJourney" />
+				</methods>
+			</class>
+			<class name="testcoding.SignInTest">
+				<methods>
+					<include name="shouldThrowAnErrorIfSignInDetailsAreMissing" />
+				</methods>
+			</class>
+			<class name="testcoding.HotelBookingTest">
+				<methods>
+					<include name="shouldBeAbleToSearchForHotels" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
